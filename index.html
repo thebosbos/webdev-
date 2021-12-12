@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" type="image" href="">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning space kids</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--boxicons CDN link -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <div class="navbar">
+     <ul>
+      <li style="float:right"><a href="news.asp">Tutorials</a></li>
+      <li style="float:right"><a href="contact.asp">Home</a></li>
+      <li style="float:right"><div class="adult"><img  src="image/adult.png"></div></li>
+      <input type="text" placeholder="Search.."></li>
+     </ul>
+    </div>
+   <div class="sidebar close">
+    <div class="logo-details">
+      <i class='bx bx-happy-beaming'></i>
+      <span class="logo_name">Kids Zone</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="#">
+          <i class='bx bx-home' ></i>
+          <span class="link_name">Home</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">home</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-book' ></i>
+          <span class="link_name">Learning Space</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Learning</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-chat' ></i>
+          <span class="link_name">Chat</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Chat</a></li>
+        </ul>
+      </li>
+      <li>
+      <li>
+        <a href="#">
+          <i class='bx bx-history'></i>
+          <span class="link_name">History</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">History</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-cog' ></i>
+          <span class="link_name">Setting</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Setting</a></li>
+        </ul>
+      </li>
+      <li>
+    <div class="profile-details">
+      <div class="profile-content">
+        <!--<img src="image/profile.jpg" alt="profileImg">-->
+      </div>
+      <div class="name-job">
+        <div class="profile_name">Logout</div>
+        <div class="job"></div>
+      </div>
+      <i class='bx bx-log-out' ></i>
+    </div>
+  </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+      <span class="text">MENU</span>
+      <div>
+        <div class="container">
+          <div class="box">
+            <img src="image/b.png">
+            <div class="mini_box">
+              <h1>Programming</h1>
+            </div>
+          </div>
+          <div class="box">
+            <img src="image/c.png">
+            <div class="mini_box">
+              <h1>Soft Skills</h1>
+            </div>
+          </div>
+          <div class="box">
+            <img src="image/a.png">
+            <div class="mini_box">
+              <h1>Scientific </h1>
+            </div>
+          </div>   
+        </div>
+          <!----------------------- container2 -------------------------->
+         <div class="container2">
+          <div class="box">
+            <img src="image/d.png">
+            <div class="mini_box">
+              <h1>HTML For Kids</h1>
+            </div>
+          </div>
+          <div class="box">
+            <img src="image/e.png">
+            <div class="mini_box">
+              <h1>Learn English</h1>
+            </div>
+          </div>
+            
+
+       </div> 
+
+
+       <!-------- hathi el thaniya eli bechn 3abiha el fiha el suggestingssg ----->
+
+
+
+      
+
+                                      
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+  </body>
+</html>
